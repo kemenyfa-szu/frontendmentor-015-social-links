@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+    font-weight: 700;
+}
+
+:root {
+    --bright-green: hsl(75, 94%, 69%);
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    --black-tr: hsl(0, 0%, 0%, 0.25);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--off-black);
+    color: var(--white);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+main {
+    min-height: calc(100vh - 1rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+p.location {
+    color: var(--green);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+q::before,
+q::after{
+    content: '"';
+}
+
+
+img {
+    display: block;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+img.avatar {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+.profile-card-container {
+    width: clamp(23rem, 50vw, 26rem);
+    background-color: var(--dark-grey);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.links p {
+    margin: 0;
+}
+
+p a.social-link {
+    display:block;
+    background-color: var(--grey);
+    padding: 1rem;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a.social-link:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+}
+
+a.social-link:active {
+    background: linear-gradient(90deg, var(--bright-green) 0%, var(--green) 40%, var(--green) 60%, var(--bright-green) 100%);
+    background-color: var(--bright-green);
+}
+
+.attribution {
+    background-color: var(--black-tr);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution p {
+    margin-bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+
+}
